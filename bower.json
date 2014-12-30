@@ -1,0 +1,24 @@
+{
+  "name": "tanya",
+  "version": "0.0.1",
+  "authors": [
+    "Perry <perryjhoffman@gmail.com>"
+  ],
+  "description": "Tanya's Portfolio",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://tanyacolaco.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap.css": "~2.3.2",
+    "es5-shim": "~2.1.0",
+    "jquery": "~2.1.3"
+  }
+}
