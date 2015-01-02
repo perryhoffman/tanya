@@ -22,6 +22,12 @@
       <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,700,300|Kaushan+Script' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/tanya/styles/main.css">
     <!-- endbuild -->
+
+      <!-- Need to load Google feed api in the head -->
+      <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+      <script>
+          google.load("feeds", "1");
+      </script>
   </head>
   <body>
     <!--[if lt IE 7]>
@@ -58,6 +64,16 @@
             </div>
         </div>
     </div>
+    <div class="blog-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Latest Entries</h3>
+                    <div id="blog-feed"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -70,7 +86,7 @@
         </div>
     </div>
     <div class="footer--bottom">
-        2014 &copy; Tanya Colaco. All rights reserved.
+        2015 &copy; Tanya Colaco. All rights reserved.
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->

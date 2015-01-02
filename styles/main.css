@@ -103,11 +103,11 @@ h2 {
     opacity: 1.0;
 }
 
-.instagram-wrap {
+.instagram-wrap, .blog-wrap {
     background: #EEE;
 }
 
-.instagram-content h3 {
+.container h3 {
     text-transform: uppercase;
     letter-spacing: 0.5em;
     font-size: 12px;
@@ -134,7 +134,7 @@ h2 {
     background: rgba(#333, 0.4);
     color: #FFF;
 }
-.photo-box .description {
+.photo-box .description, .blog-entry .blog-entry_content p {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     background: #FFF;
@@ -145,6 +145,57 @@ h2 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.blog-entry {
+    margin-bottom: 20px;
+}
+
+.blog-entry a {
+    text-decoration: none;
+    color: #585C65;
+}
+
+.blog-entry .blog-entry_thumb {
+    width: 200px;
+    height: 200px;
+    background: #4A4A4A;
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+}
+.blog-entry .blog-entry_thumb:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+.blog-entry .blog-entry_thumb img {
+    max-height: 180px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.blog-entry .blog-entry_content {
+    background: #FFF;
+    width: 970px;
+    padding: 25px;
+    height: 200px;
+}
+.blog-entry .blog-entry_content p {
+    padding: 15px 0px;
+    margin-bottom: 0px;
+}
+.blog-entry .blog-entry_content .continue-reading {
+    position: absolute;
+    right: -10px;
+    bottom: 25px;
+    padding: 10px;
+    background: #333;
+    height: 38px;
+    color: #FFF;
+}
+.blog-entry .blog-entry_content .continue-reading i {
+    margin-right: 5px;
 }
 
 .footer {
