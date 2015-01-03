@@ -147,6 +147,10 @@ h2 {
     text-overflow: ellipsis;
 }
 
+.blog-wrap {
+    padding-bottom: 50px;
+}
+
 .blog-entry {
     margin-bottom: 20px;
 }
@@ -159,7 +163,7 @@ h2 {
 .blog-entry .blog-entry_thumb {
     width: 200px;
     height: 200px;
-    background: #4A4A4A;
+    background: #FCFCFC;
     text-align: center;
     padding: 10px;
     display: inline-block;
@@ -175,6 +179,14 @@ h2 {
     display: inline-block;
     vertical-align: middle;
 }
+.blog-entry .blog-entry_date {
+    font-size: 13px;
+    color: #BABABA;
+}
+.blog-entry .blog-entry_content h5 {
+    margin-bottom: 0px;
+}
+
 .blog-entry .blog-entry_content {
     background: #FFF;
     width: 970px;
@@ -190,9 +202,13 @@ h2 {
     right: -10px;
     bottom: 25px;
     padding: 10px;
-    background: #333;
+    background: #B2B2B2;
     height: 38px;
     color: #FFF;
+    font-size: 12px;
+}
+.blog-entry .blog-entry_content .continue-reading:hover {
+    background: #5E5E5E;
 }
 .blog-entry .blog-entry_content .continue-reading i {
     margin-right: 5px;
@@ -201,7 +217,6 @@ h2 {
 .footer {
     background: #FFF;
     padding: 30px 0;
-    text-align: center;
 }
 
 .footer h4 {
@@ -214,7 +229,27 @@ h2 {
 }
 
 .footer .about-text {
-    padding: 0 30px;
+    text-align: center;
+}
+.footer .about-text p {
+    line-height: 28px;
+}
+.footer .about-text h5 {
+    margin: 30px;
+    color: #ABABAB;
+    font-weight: 400;
+}
+
+.footer .about-social {
+    margin-top: 30px;
+}
+.footer .about-social a {
+    color: #797979;
+    margin: 0px 15px;
+    font-size: 26px;
+}
+.footer .about-social a:hover {
+    color: #585C65;
 }
 
 .footer .contact-now-btn {
@@ -280,8 +315,8 @@ h2 {
         padding: 100px 0;
     }
     .footer .about-text {
-        width: 650px;
-        margin: 0 auto;
+        /*width: 650px;*/
+        /*margin: 0 auto;*/
     }
     .contact-now-btn {
         width: 20%;
